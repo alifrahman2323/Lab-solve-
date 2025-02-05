@@ -1,14 +1,10 @@
-import java.util.*;
 public class Main {
-public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    System.out.println("Enter the size of array:");
-    int size = input.nextInt();
-    ArrayOperation arrayOps = new ArrayOperation(size);
+    public static void main(String[] args) {
+        ArrayOperations operations = new ArrayOperations();
 
-    System.out.println("Sum: " + arrayOps.calculateSum());
-    System.out.println("Average: " + arrayOps.calculateAverage());
-    System.out.println("Maximum: " + arrayOps.findMaximum());
-    System.out.println("Minimum: " + arrayOps.findMinimum());
-}
+        System.out.println("Sum: " + operations.getSum());
+        System.out.println("Average: " + operations.getAverage());
+        System.out.println("Maximum: " + operations.getMaximum());
+        System.out.println("Minimum: " + operations.getMinimum());
+    }
 }
